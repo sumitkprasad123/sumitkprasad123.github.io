@@ -6,30 +6,30 @@ import {GrCopy,GrMenu,GrClose} from "react-icons/gr"
 
 const Navbar = () => {
    const [status,setStatus] = useState(false)
+   const [activeNav,setActiveNav] = useState("#")
    const handleClick = () => {
       setStatus(!status)
    }
    console.log(status)
    return (
     <div id="nav-menu">
-       <div>Sumit </div>
-       <div  id={"menu"} >
-         
-             <p class="nav-link home"><FcHome className='nav-icone' />Home</p>
-             <p class="nav-link about"><FcBusinessman className='nav-icone'/> About</p>
-             <p class="nav-link skills"><FcEngineering className='nav-icone' />Skills</p>
-             <p class="nav-link projects"><FcViewDetails className='nav-icone' />Projects</p>
-             <p class="nav-link contact"><FcContacts className='nav-icone' />Contact</p>
-             <p class="nav-link resume">Resume<GrCopy className='nav-icone' /></p>
-         
-       </div>
-       <div
-          className='nav-hambarger'
-          onClick={handleClick}
-        >
-         {status?<GrMenu className='nav-icone' />:<GrClose className='nav-icone' />}
+      <div id={!status?"nav":"hidden__nav"}>
+         <div>Sumit </div>
+
+         <div  id={!status?"menu":"hidden__menu"} >           
+               <a class="nav-link home" href="/#"  onClick={() => setActiveNav("#")} id={activeNav === "#" ? "active":""} ><FcHome className='nav-icone' />Home</a>
+               <a class="nav-link about" href="/#about" onClick={() => setActiveNav("#about")} id={activeNav === "#about" ? "active":""}><FcBusinessman className='nav-icone'/> About</a>
+               <a class="nav-link skills" href="/#skills" onClick={() => setActiveNav("#skills")} id={activeNav === "#skills" ? "active":""}><FcEngineering className='nav-icone' />Skills</a>
+               <a class="nav-link projects" href="/#projects" onClick={() => setActiveNav("#projects")} id={activeNav === "#projects" ? "active":""}><FcViewDetails className='nav-icone' />Projects</a>
+               <a class="nav-link contact" href="/#contact" onClick={() => setActiveNav("#contact")} id={activeNav === "#contact" ? "active":""}><FcContacts className='nav-icone' />Contact</a>
+               <a class="nav-link resume" href="/#" onClick={() => setActiveNav("#resume")} id={activeNav === "#resume" ? "active":""}>Resume<GrCopy className='nav-icone' /></a> 
          </div>
 
+         <div className='nav-hambarger' onClick={handleClick}>
+            {!status?<GrMenu className='nav-icone' />:<GrClose className='nav-icone' />}
+         </div>
+         
+      </div>
     </div>
   )
 }
