@@ -1,6 +1,4 @@
 #about{
-    border:1px solid rgb(220, 23, 23);
-    height:30rem;
-    /* background-color: rgb(234, 252, 252); */
-  
+    border:1px solid blue;
+    height:30rem; 
 }

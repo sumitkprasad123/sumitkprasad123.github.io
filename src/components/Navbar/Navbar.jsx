@@ -18,11 +18,17 @@ const Navbar = () => {
 
          <div  id={!status?"menu":"hidden__menu"} >           
                <a class="nav-link home" href="/#"  onClick={() => setActiveNav("#")} id={activeNav === "#" ? "active":""} ><FcHome className='nav-icone' />Home</a>
-               <a class="nav-link about" href="/#about" onClick={() => setActiveNav("#about")} id={activeNav === "#about" ? "active":""}><FcBusinessman className='nav-icone'/> About</a>
+               <a class="nav-link about" href="/#about" onClick={() => setActiveNav("#about")} id={activeNav === "#about" ? "active":""}><FcBusinessman className='nav-icone'/> About Me</a>
                <a class="nav-link skills" href="/#skills" onClick={() => setActiveNav("#skills")} id={activeNav === "#skills" ? "active":""}><FcEngineering className='nav-icone' />Skills</a>
                <a class="nav-link projects" href="/#projects" onClick={() => setActiveNav("#projects")} id={activeNav === "#projects" ? "active":""}><FcViewDetails className='nav-icone' />Projects</a>
                <a class="nav-link contact" href="/#contact" onClick={() => setActiveNav("#contact")} id={activeNav === "#contact" ? "active":""}><FcContacts className='nav-icone' />Contact</a>
-               <a class="nav-link resume" href="/#" onClick={() => setActiveNav("#resume")} id={activeNav === "#resume" ? "active":""}>Resume<GrCopy className='nav-icone' /></a> 
+               <a class="nav-link resume"
+                   onClick={() => setActiveNav("#resume")}
+                    id={activeNav === "#resume" ? "active":""}
+                    href="https://drive.google.com/file/d/1-CJwYy4RepRckb80rM-2jTfdMVAKdM5T/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Resume<GrCopy className='nav-icone' /></a> 
          </div>
 
          <div className='nav-hambarger' onClick={handleClick}>
