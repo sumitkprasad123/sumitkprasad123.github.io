@@ -1,5 +1,108 @@
 #skills{
-    border:1px solid black;
-    height:30rem;
-    /* background-color: rgb(255, 0, 225); */
+    /* border:1px solid black; */
+    height:100%;
+    background-color: var(--color-bg-primary);
+    padding: 5%;
+}
+#skills>h1{
+    text-align: center;
+    color:var(--color-bg);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.skill__container_main{
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5%;
+    margin:auto;
+
+}
+/* for skill icone and container */
+   .frontend{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    gap:1rem;
+    
+   }
+   article{
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    padding: 0.5rem;
+   }
+   .skills__details>p{
+    font-size: 1.2rem;
+   }
+/* ---------- */
+.skill__container{
+   background-color: var(--color-bg-primary);
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.skill__container>h3{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+.skill__container_main>div{
+    /* border:1px solid black; */
+    height:auto;
+    padding: 5%;
+    border-radius: 30px;
+}
+
+
+
+/* media Query */
+
+@media screen  and (max-width:480px){
+    .skill__container_main{
+        /* border:1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:3%;
+        margin:auto;
+    
+    }
+    .skill__container{
+        width:100%
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .skill__container_main{
+        /* border:1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:5%;
+        margin:auto;
+    
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+        .skill__container_main{
+            /* border:1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:5%;
+            margin:auto;
+
+        }
+}
+
+@media screen and (min-width: 960px) and (max-width:1200px){
+    .skill__container_main{
+        /* border:1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:5%;
+        margin:auto;
+
+    }
 }
