@@ -25,6 +25,7 @@ const Navbar = () => {
                <a class="nav-link resume"
                   href={CV} download={"Sumit-Kumar-Resume"}
                   onClick={() =>window.open(CV)}
+                  id="resume-link-1"
                 >Resume<GrCopy className='nav-icone' /></a> 
          </div>
 
