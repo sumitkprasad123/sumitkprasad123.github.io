@@ -1,18 +1,18 @@
 
 #nav{
     /* border:1px solid black; */
+    background-color:var(--color-bg-primary);
     position: fixed;
     width:100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
     z-index: 125;
-    padding:0.8rem 3rem 0.8rem 3rem ;
-    background-color: #eff4fd;
+    padding:0.8rem 3rem 0.8rem 3rem ;   
 }
 #hidden__nav{
-    border:1px solid black;
-    background-color: whitesmoke;
+    /* border:1px solid black; */
+    background-color:var(--color-bg-primary);
     position: fixed;
     width:100%;
     display: flex;
@@ -20,16 +20,15 @@
     text-align: center;
     z-index: 1;
     padding:0.8rem 3rem 0.8rem 3rem ;
-    /* filter: blur(1px); */
 }
 #hidden__nav>div:nth-child(1){
-    color:rgb(51, 49, 49);
+    color:var(--color-primary);
     font-family: cursive;
     font-size: 2rem;
 }
 
 #nav>div:nth-child(1){
-    color:rgb(51, 49, 49);
+    color:var(--color-primary);
     font-family: cursive;
     font-size: 2rem;
 }
@@ -43,36 +42,27 @@
 #menu>a{
     /* border:1px solid black; */
     display: flex;
-    gap:0.1rem;
     align-items: center;
+    gap:0.1rem;  
     font-size: 1.2rem;
     font-weight: 550;
-    /* color:black; */
 }
 
 #active{
-   color:orange;
+    color: var(--color-bg)
 }
 
 .nav-icone{
     font-size: 1.7rem;
 }
 #menu>a:nth-child(6){
-    border: 1px solid rgb(28, 28, 101);
+    /* border: 1px solid rgb(28, 28, 101); */
     border:none;
-    background-color: orange;
-    color: black;
+    background-color: var(--color-bg);
+    color:var(--color-primary);
     border:none;
-    border-radius: 1rem;
     padding:10px;  
-    /* background: orange;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 15px; */
+    border-radius: 0.8rem;
 }
 /* hidden menu css */
 
@@ -85,12 +75,12 @@
         padding:0.8rem 1rem 0.8rem 1rem ;
     }
     #hidden__nav>div:nth-child(1){
-        color:rgb(51, 49, 49);
+        color:var(--color-primary);
         font-family: cursive;
         font-size: 1.2rem;
     }
     #nav>div:nth-child(1){
-        color:rgb(51, 49, 49);
+        color:var(--color-primary);
         font-family: cursive;
         font-size: 1.2rem;
     }
@@ -109,7 +99,6 @@
       #hidden__menu{
         /* border: 1px solid red; */
         margin:3rem 2rem 2.5rem 0rem;
-        /* width:100%; */
         display:grid;
         grid-template-rows: repeat(5,1fr);
         gap:1rem;
@@ -122,26 +111,23 @@
         justify-content: center;
         gap:0.2rem;
         font-size: 0.8rem;
-        /* font-weight: 550; */
     }
      #hidden__menu>a:nth-child(6){
-         border: 1px solid rgb(28, 28, 101);
+         /* border: 1px solid rgb(28, 28, 101); */
          border:none;
-         background-color: orange;
-         color: black;
-         border-radius: 1rem;
+         background-color: var(--color-bg);
+         color:var(--color-primary);
+         border-radius: 0.8rem;
          padding:8px;  
      }
 }
 
 @media screen and (min-width:481px) and (max-width:768px){
     #hidden__nav>div:nth-child(1){
-        color:rgb(51, 49, 49);
         font-family: cursive;
         font-size: 1.5rem;
     }
     #nav>div:nth-child(1){
-        color:rgb(51, 49, 49);
         font-family: cursive;
         font-size: 1.5rem;
     }
@@ -160,7 +146,6 @@
       #hidden__menu{
         /* border: 1px solid red; */
         margin:3rem 4rem 2.5rem 0rem;
-        /* width:100%; */
         display:grid;
         grid-template-rows: repeat(5,1fr);
         gap:1rem;
@@ -173,14 +158,13 @@
         justify-content: center;
         gap:0.2rem;
         font-size: 1.1rem;
-        /* font-weight: 550; */
     }
      #hidden__menu>a:nth-child(6){
-         border: 1px solid rgb(28, 28, 101);
+         /* border: 1px solid rgb(28, 28, 101); */
          border:none;
-         background-color: orange;
-         color: black;
-         border-radius: 1rem;
+         background-color: var(--color-bg);
+         color: var(--color-primary);
+         border-radius: 0.8rem;
          padding:8px;  
      }
   
@@ -214,11 +198,11 @@
         font-weight: 550;
     }
      #hidden__menu>a:nth-child(6){
-         border: 1px solid rgb(28, 28, 101);
+         /* border: 1px solid rgb(28, 28, 101); */
          border:none;
-         background-color: orange;
-         color: black;
-         border-radius: 1rem;
+         background-color: var(--color-bg);
+         color:var(--color-primary);
+         border-radius: 0.8rem;
          padding:10px;  
      }
   

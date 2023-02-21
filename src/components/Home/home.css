@@ -1,32 +1,33 @@
 #home{
     /* border:1px solid red; */
     display: grid;
-    grid-template-columns: 52% 40%;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    grid-column-gap: 18%;
-    background-color: #eff4fd;
-    padding: 10% 15% 5% 5%
+    background-color: var(--color-bg-primary);
+    padding: 10% 0% 5% 10%;
 }
 
 .detail{
+    /* border:1px solid black; */
    margin-left: 8%;
 }
 span{
-    color: orange;
+    color: var(--color-bg);
     font-size: 2.6rem;
 }
 
 .detail p{
-    color: #555;
+    color: var(--color-light);
     line-height: 22px;
+    text-align: justify;
 }
 
 .detail a{  
-    background:  orange;
+    background:var(--color-bg);
     padding: 10px 10px;
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color:var(--color-white);
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px; 
@@ -42,37 +43,27 @@ span{
     
   
 }
-.about__me { 
-    /* border:1px solid blueviolet; */
-    background:  orange;
-    margin-right: 8%;
-    display:grid;
-    aspect-ratio: 1/1;
-    height: auto;
-    width:17rem;
-    border-radius: 2rem;
-}
-.about__me-image>img{
-   height:100%;
-   width: 100%;
-   background-color: #eff4fd;
-}
-.about__me-image{
+
+.container__img{
     /* border:1px solid black; */
-    border-radius: 2rem;
-    overflow:hidden;
-    transform:rotate(12deg);
-    transition: all 500ms ease;
-
-    
+    margin: auto;
+}
+.pro__img{
+    /* border:1px solid black; */
+    background-color: var(--color-bg);
+    height:40vh;
+    width:40vh;
+    overflow: hidden;
+    border-radius:58% 42% 43% 57% / 29% 31% 69% 71%  ;
+}
+.pro__img>img{
+    width:100%;
+    height: 100%;
+   
 }
 
-.about__me-image:hover {
-    transform:rotate(0);
-}
 
 /* media screen */
-
 @media screen  and (max-width:480px){
     #home{
         /* border:1px solid red; */
@@ -81,8 +72,8 @@ span{
         justify-content: center;
         align-items: center;
         row-gap: 3rem;
-        background-color: #eff4fd;
-       
+        background-color: var(--color-bg-primary);
+        padding: 10% 15% 5% 5%
     }
    
     .detail>h2,span{
@@ -106,19 +97,6 @@ span{
     justify-content: center;
   }
     
-
-    .about__me-image{
-        border-radius: 2rem;
-        overflow:hidden;
-        transform:rotate(12deg);
-        transition: all 500ms ease;   
-    }
-
-    .about__me-image:hover {
-        transform:rotate(0);
-    }
-
-
 }
 
 @media screen and (min-width:481px) and (max-width:768px){
@@ -130,7 +108,7 @@ span{
         justify-content: center;
         align-items: center;
         row-gap: 5rem;
-        background-color: #eff4fd;
+        background-color: var(--color-bg-primary);
         padding: 10% 15% 5% 5%
     }
    
@@ -151,49 +129,44 @@ span{
     position: relative;
     margin: auto;
   }
-
-    
-
-    .about__me-image{
-        border-radius: 2rem;
-        overflow:hidden;
-        transform:rotate(12deg);
-        transition: all 500ms ease;   
-    }
-
-    .about__me-image:hover {
-        transform:rotate(0);
-    }
-
-
 }
 
 
 @media only screen and (min-width: 769px) and (max-width: 960px) {
- 
-    .about__me-image{
-        border-radius: 2rem;
-        overflow:hidden;
-        transform:rotate(12deg);
-        transition: all 500ms ease;   
+    .detail>h2{
+        font-size: 1.4rem;
     }
-
-    .about__me-image:hover {
-        transform:rotate(0);
+    span{
+        font-size: 2.4rem;
     }
-
+    .detail p{
+        color: var(--color-light);
+        line-height: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .detail a{  
+        background:var(--color-bg);
+        padding: 8px 8px;
+        text-decoration: none;
+        font-weight: bold;
+        color:var(--color-white);
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 5px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+        width:15rem;
+        font-size: 0.8rem; 
+    }
+    
+    .d_icone{
+       font-size: 1.8rem;
+    }
 }
 
 @media only screen and (min-width:960px){
 
-    .about__me-image{
-        border-radius: 2rem;
-        overflow:hidden;
-        transform:rotate(12deg);
-        transition: all 500ms ease;   
-    }
-
-    .about__me-image:hover {
-        transform:rotate(0);
-    }
 }
