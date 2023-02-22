@@ -10,14 +10,14 @@ const Skill = () => {
           <div className='skill__container'>
              <h3>Frontend Development</h3>
              <div className='skills__logo'>
-                <div className='frontend'>
+                <div className='frontend' class="skills-card">
 
                     <article className='skills__details'>
-                        <img
+                        <img class="skills-card-img"
                           style={{ width: "35px", height: "35px" }}
                           src="https://img.icons8.com/color/48/null/html-5--v1.png" alt="html"
                         />
-                        <p>Html 5</p>        
+                        <p class="skills-card-name">Html 5</p>        
                     </article>
                     <article className='skills__details'>
                         <img

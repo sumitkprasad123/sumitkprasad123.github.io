@@ -1,6 +1,61 @@
-#contact{
-    border:1px solid black;
-    height:30rem;
-    /* background-color: rgb(235, 111, 54); */
-
-}
+.ContactContainer {
+    width: 100%;
+    background-color: var(--color-bg-primary);
+    padding: 3%;
+  }
+  
+  .GithubH1{
+    text-align: center;
+    color:var(--color-bg);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .middleSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4%;
+    /* justify-content: space-around; */
+  }
+  .middleSection > div {
+    /* border:1px solid black; */
+    padding: 1rem;
+  }
+  .middleSection > div > h1 {
+    font-size: x-large;
+    margin-top: 0px;
+  }
+  .middleSection > div p {
+    margin-top: 0px;
+  }
+  .middleSection > div a {
+    text-decoration: none;
+    color: var(--color-bg);
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1120px) {
+    .middleSection {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .middleSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .middleSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .middleSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (max-width: 319px) {
+    .middleSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

@@ -26,7 +26,7 @@ const About = () => {
 
           <div className='box2'>
              <h2>I am <span className='highlight'>Full Stack Web Developer</span></h2>
-             <p>My name is Sumit Kumar, I am from<span className='highlight_text'> Ranchi , Jharkhand.</span> I have knowledge in<span className='highlight_text'> HTML, CSS, Javascript, REACT, Redux, Chakra-Ui</span> and i make user-friendly websites.
+             <p>My name is Sumit Kumar, I am from<span className='highlight_text'> Ranchi , Jharkhand.</span> I have knowledge in<span className='highlight_text'></span> HTML, CSS, Javascript, REACT, Redux, Chakra-Ui and i make user-friendly websites.
                Passionate Web Developer with skills in the MERN stack.
                I'm skilful in problem-solving and building new things using technology. 
               I look forward to joining a company where I can contribute to individual and company growth..</p>

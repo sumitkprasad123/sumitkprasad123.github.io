@@ -14,18 +14,18 @@ const Project = () => {
        <div id="project__main__container">
       
        {/* first Project here */}
-       <div className='projec__container'>
+       <div className='projec__container' class="project-card">
            <div className='pro__image'>
               <img src={IMG1} alt="img1" />
            </div>
            <div className='pro__discrip'>
-               <h3>Bluemercury Clone</h3>
-               <p>
+               <h3 class="project-title">Bluemercury Clone</h3>
+               <p class="project-description">
                   Bluemercury.com is a leading luxury beauty retailer offering the
                   best of cosmetics, skincare, makeup, perfume, hair, bath, and
                   body products.
               </p>
-              <div style={{ display: "flex", gap: "8px", margin: "10px" }}>
+              <div  class="project-tech-stack" style={{ display: "flex", gap: "8px", margin: "10px" }}>
                     <img
                       style={{ width: "35px" }}
                       src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -43,8 +43,8 @@ const Project = () => {
                     />
               </div>
               <div className='btn__container'>
-                 <a rel="noreferrer" href="https://github.com/ignitinsharma/bluemercury_clone" className='btn' target="_blank">Github<AiOutlineGithub className='d_icone' /></a>
-                 <a rel="noreferrer" href="https://celebrated-bonbon-67bbfd.netlify.app" className='btn' target="_blank">Deployed Url<FiExternalLink className='d_icone'/></a>
+                 <a class="project-github-link" rel="noreferrer" href="https://github.com/ignitinsharma/bluemercury_clone" className='btn' target="_blank">Github<AiOutlineGithub className='d_icone' /></a>
+                 <a class="project-deployed-link" rel="noreferrer" href="https://celebrated-bonbon-67bbfd.netlify.app" className='btn' target="_blank">Deployed Url<FiExternalLink className='d_icone'/></a>
               </div> 
            </div>
        </div>

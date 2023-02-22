@@ -22,10 +22,9 @@ const Navbar = () => {
                <a class="nav-link skills" href="/#skills" onClick={() => setActiveNav("#skills")} id={activeNav === "#skills" ? "active":""}><FcEngineering className='nav-icone' />Skills</a>
                <a class="nav-link projects" href="/#projects" onClick={() => setActiveNav("#projects")} id={activeNav === "#projects" ? "active":""}><FcViewDetails className='nav-icone' />Projects</a>
                <a class="nav-link contact" href="/#contact" onClick={() => setActiveNav("#contact")} id={activeNav === "#contact" ? "active":""}><FcContacts className='nav-icone' />Contact</a>
-               <a class="nav-link resume"
+               <a id="resume-link-1" class="nav-link resume"
                   href={CV} download={"Sumit-Kumar-Resume"}
                   onClick={() =>window.open(CV)}
-                  id="resume-link-1"
                 >Resume<GrCopy className='nav-icone' /></a> 
          </div>
 
