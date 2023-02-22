@@ -5,8 +5,8 @@ import Project from "./components/Projects/Project";
 import Contact from "./components/Contacts/Contact";
 import Navbar from "./components/Navbar/Navbar"
 import Home from './components/Home/Home';
-import { GithubState } from './components/github/GithubState';
 import Footer from './components/Footer/Footer';
+import GithubState from './components/github/GithubState';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <About/>
           <Skill/>
           <Project/>
-          {/* <GithubState/> */}
+          <GithubState/>
           <Contact/>
           <Footer />
     </div>
